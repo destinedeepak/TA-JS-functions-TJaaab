@@ -15,7 +15,7 @@ function minToSec() {
   return min * 60;
 }
 // - Execute the function with required parameter
-
+minToSec(4);
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
 Return true and false based on that.
@@ -26,7 +26,7 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-const isInRange = (lower, upper, number) => num <= upper && num >= lower ? true :false;
+const isInRange = (lower, upper, number) => num < upper && num > lower ? true :false;
 
 isInRange(10,20,15)
 
@@ -53,8 +53,6 @@ function calculateBMI(weight, height) {
    
     if(BMI < 18.5)
       return 'Underweight';
-    else if(BMI >= 18.5 && BMI <=24.9)
-      return 'Normal weight';
     else if (BMI >= 18.5 && BMI <=24.9)
       return 'Normal weight';  
     else if (BMI >= 25  && BMI <=29.9)
@@ -122,4 +120,4 @@ sum(2, 4); // 4
 sum('Arya', 'Stark'); // "Arya Stark"
 sum('Arya', 2); // Enter valid Values
 sum(null, 2); // Enter valid Values
-c
+sum(undefined, 2); // Enter valid Values
