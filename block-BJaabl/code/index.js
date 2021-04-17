@@ -4,7 +4,7 @@
 function sayHello(name){
   alert(`Hello ${name}`)
 }
-sayHello();
+sayHello(`deepak`);
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -56,13 +56,13 @@ function calc(numA, numB, operation){
     alert(`Enter a valid input`);
   }
   else if(operation == `add`){
-    return `${numA + numB}`
+    return numA + numB
   }else if(operation == 'sub'){
-    return `${numA-numB}`;
+    return numA-numB ;
   }else if(operation == 'mul'){
-    return `${numA*numB}`;
+    return numA*numB;
   }else if(operation == 'div'){
-    return `${numA/numB}`;
+    return numA/numB;
   }else{
     alert(`enter a valid input`);
   }
