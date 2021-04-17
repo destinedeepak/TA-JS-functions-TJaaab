@@ -8,8 +8,8 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge(puppyAge) {
-  return `dog's age is ${puppyAge * 7} in dog year`
+function calculateDogAge(puppyAge , conversion=7) {
+  return `dog's age is ${puppyAge * conversion} in dog year`
 }
 
 /*
@@ -31,7 +31,7 @@ function calculateMoviesToWatch(age=0, numberOfMovie) {
 */
 
 function celsiusToFahrenheit(tempInCelsius) {
-   return `The temp in fahrenheit will be: ${tempInCelsius*9/5+32}`
+   return `${tempInCelsius}°F is ${(tempInCelsius * 9 / 5) +32}°C`
 }
 
 /*
@@ -78,12 +78,14 @@ function sumOrProductOfN(num , operator) {
       temp += i;
     }
     return temp;
+
   }else if(operator == 'product'){
     let temp =1;
     for(i=num; i>0; i--){
       temp *= i;
     }
     return temp;
+    
   }else{
     alert `Enter a valid Input`;
   }
