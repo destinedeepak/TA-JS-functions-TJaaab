@@ -45,26 +45,25 @@ function addOne(number){
   return ++number;
 }
 // - Write a Function Expression
-const addNumber =function addOne(Number){
+const addOne =function (Number){
   return ++number;
 } 
 
 // - Write an Arrow Function without curly brackets(if possible)
-const addNumber = (number) => ++number; 
+const addOne = (number) => ++number; 
 
 // - Write an Arrow Function with curly brackets
-const addNumber = (number)=>{
+const addOne = (number)=>{
   return ++number;
 }
 
 // - Execute the function
 addOne(5);
-addNumber(10);
 
 // - Execute the function and store the return value in a variable.
-let addedNumber = addNumber(5);
+let addOne = addOne(5);
 // - What is the typeof returnValue
-typeof addedNumber;// "number"
+typeof addOne;// "number"
 
 /* 2. Subtract one
 
@@ -78,18 +77,17 @@ function substractOne(number){
   return --number;
 }
 // - Write a Function Expression
-const substractNumber = function subtractOne(number){
+const subtractOne = function (number){
   return --number;
 }
 // - Write an Arrow Function without curly brackets(if possible)
-const substractNumber = (number) => --number ;
+const subtractOne = (number) => --number ;
 // - Write an Arrow Function with curly brackets
-const substractNumber = (number) => {
+const subtractOne = (number) => {
   return --number;
 } ;
 // - Execute the function
 subtractOne(4);
-substractNumber(5);
 // - Execute the function and store the return value in a variable.
 let substractedNumber = substractOne(4);
 // - What is the typeof returnValue
@@ -107,19 +105,18 @@ function sum(numA, numB){
   return numA+numB;
 }
 // - Write a Function Expression
-const addTwoNumber =function sum(numA, numB){
+const sum =function (numA, numB){
   return numA+numB;
 }
 // - Write an Arrow Function without curly brackets(if possible)
-const addTwoNumber = (numA, numB) => numA + numB;
+const sum = (numA, numB) => numA + numB;
 
 // - Write an Arrow Function with curly brackets
-const addTwoNumber = (numA, numB) =>{
+const sum = (numA, numB) =>{
   return numA + numB;
 };
 // - Execute the function
 sum(4,5);
-addTwoNumber(4,5);
 // - Execute the function and store the return value in a variable
 let addedTwoNumber = sum(4,5); 
 // - What is the typeof returnValue
@@ -136,7 +133,7 @@ function square(number){
   return number * number;
 }
 // - Write a Function Expression
-const square = function square(number){
+const square = function (number){
   return number * number;
 }
 // - Write an Arrow Function without curly brackets(if possible)
